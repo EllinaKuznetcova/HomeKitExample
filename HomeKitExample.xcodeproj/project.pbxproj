@@ -7,21 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1BDC771DE9FD2300CCBA03 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BDC761DE9FD2300CCBA03 /* Helpers.swift */; };
+		DC1BDC791DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BDC781DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift */; };
+		DCE125EB1DE9D82E003EFC56 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE125EA1DE9D82E003EFC56 /* DevicesViewController.swift */; };
+		DCE125ED1DE9D87A003EFC56 /* HomeKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE125EC1DE9D87A003EFC56 /* HomeKitService.swift */; };
 		E7B636711D34EB3D00711E90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B636701D34EB3D00711E90 /* AppDelegate.swift */; };
-		E7B636731D34EB3D00711E90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B636721D34EB3D00711E90 /* ViewController.swift */; };
+		E7B636731D34EB3D00711E90 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B636721D34EB3D00711E90 /* RoomsViewController.swift */; };
 		E7B636761D34EB3D00711E90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B636741D34EB3D00711E90 /* Main.storyboard */; };
 		E7B636781D34EB3D00711E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B636771D34EB3D00711E90 /* Assets.xcassets */; };
 		E7B6367B1D34EB3D00711E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B636791D34EB3D00711E90 /* LaunchScreen.storyboard */; };
+		E7B636841D34EB9500711E90 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B636831D34EB9500711E90 /* HomeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC1BDC761DE9FD2300CCBA03 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = ../Helpers.swift; sourceTree = "<group>"; };
+		DC1BDC781DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessorySearcherViewController.swift; sourceTree = "<group>"; };
+		DCE125EA1DE9D82E003EFC56 /* DevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		DCE125EC1DE9D87A003EFC56 /* HomeKitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeKitService.swift; sourceTree = "<group>"; };
 		E7B6366D1D34EB3D00711E90 /* HomeKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B636701D34EB3D00711E90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7B636721D34EB3D00711E90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7B636721D34EB3D00711E90 /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		E7B636751D34EB3D00711E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7B636771D34EB3D00711E90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7B6367A1D34EB3D00711E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7B6367C1D34EB3D00711E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B636821D34EB9500711E90 /* HomeKitExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HomeKitExample.entitlements; sourceTree = "<group>"; };
+		E7B636831D34EB9500711E90 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B636841D34EB9500711E90 /* HomeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +50,7 @@
 		E7B636641D34EB3D00711E90 = {
 			isa = PBXGroup;
 			children = (
+				E7B636831D34EB9500711E90 /* HomeKit.framework */,
 				E7B6366F1D34EB3D00711E90 /* HomeKitExample */,
 				E7B6366E1D34EB3D00711E90 /* Products */,
 			);
@@ -54,8 +67,13 @@
 		E7B6366F1D34EB3D00711E90 /* HomeKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				E7B636821D34EB9500711E90 /* HomeKitExample.entitlements */,
 				E7B636701D34EB3D00711E90 /* AppDelegate.swift */,
-				E7B636721D34EB3D00711E90 /* ViewController.swift */,
+				E7B636721D34EB3D00711E90 /* RoomsViewController.swift */,
+				DCE125EA1DE9D82E003EFC56 /* DevicesViewController.swift */,
+				DC1BDC781DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift */,
+				DCE125EC1DE9D87A003EFC56 /* HomeKitService.swift */,
+				DC1BDC761DE9FD2300CCBA03 /* Helpers.swift */,
 				E7B636741D34EB3D00711E90 /* Main.storyboard */,
 				E7B636771D34EB3D00711E90 /* Assets.xcassets */,
 				E7B636791D34EB3D00711E90 /* LaunchScreen.storyboard */,
@@ -96,6 +114,13 @@
 				TargetAttributes = {
 					E7B6366C1D34EB3D00711E90 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = C9ZJ96D59R;
+						LastSwiftMigration = 0810;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B636731D34EB3D00711E90 /* ViewController.swift in Sources */,
+				E7B636731D34EB3D00711E90 /* RoomsViewController.swift in Sources */,
+				DCE125EB1DE9D82E003EFC56 /* DevicesViewController.swift in Sources */,
+				DC1BDC791DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift in Sources */,
 				E7B636711D34EB3D00711E90 /* AppDelegate.swift in Sources */,
+				DC1BDC771DE9FD2300CCBA03 /* Helpers.swift in Sources */,
+				DCE125ED1DE9D87A003EFC56 /* HomeKitService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +278,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HomeKitExample/HomeKitExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = C9ZJ96D59R;
 				INFOPLIST_FILE = HomeKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Flatstack.HomeKitExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellinakuznecova.HomeKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -260,10 +293,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HomeKitExample/HomeKitExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = C9ZJ96D59R;
 				INFOPLIST_FILE = HomeKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Flatstack.HomeKitExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellinakuznecova.HomeKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +323,7 @@
 				E7B636811D34EB3D00711E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

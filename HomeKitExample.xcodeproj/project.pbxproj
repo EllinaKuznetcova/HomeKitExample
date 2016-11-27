@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC149DDE1DEB3EF500A1A5FA /* AccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC149DDD1DEB3EF500A1A5FA /* AccessoryViewController.swift */; };
 		DC1BDC771DE9FD2300CCBA03 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BDC761DE9FD2300CCBA03 /* Helpers.swift */; };
 		DC1BDC791DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BDC781DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift */; };
 		DCE125EB1DE9D82E003EFC56 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE125EA1DE9D82E003EFC56 /* DevicesViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC149DDD1DEB3EF500A1A5FA /* AccessoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryViewController.swift; sourceTree = "<group>"; };
 		DC1BDC761DE9FD2300CCBA03 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = ../Helpers.swift; sourceTree = "<group>"; };
 		DC1BDC781DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessorySearcherViewController.swift; sourceTree = "<group>"; };
 		DCE125EA1DE9D82E003EFC56 /* DevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				E7B636721D34EB3D00711E90 /* RoomsViewController.swift */,
 				DCE125EA1DE9D82E003EFC56 /* DevicesViewController.swift */,
 				DC1BDC781DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift */,
+				DC149DDD1DEB3EF500A1A5FA /* AccessoryViewController.swift */,
 				DCE125EC1DE9D87A003EFC56 /* HomeKitService.swift */,
 				DC1BDC761DE9FD2300CCBA03 /* Helpers.swift */,
 				E7B636741D34EB3D00711E90 /* Main.storyboard */,
@@ -164,6 +167,7 @@
 				DCE125EB1DE9D82E003EFC56 /* DevicesViewController.swift in Sources */,
 				DC1BDC791DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift in Sources */,
 				E7B636711D34EB3D00711E90 /* AppDelegate.swift in Sources */,
+				DC149DDE1DEB3EF500A1A5FA /* AccessoryViewController.swift in Sources */,
 				DC1BDC771DE9FD2300CCBA03 /* Helpers.swift in Sources */,
 				DCE125ED1DE9D87A003EFC56 /* HomeKitService.swift in Sources */,
 			);

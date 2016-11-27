@@ -90,11 +90,69 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="UvK-Oe-0n6" kind="presentation" identifier="toAccessoryAdding" id="NNb-yC-rjs"/>
+                        <segue destination="nP0-Y4-a5Z" kind="show" identifier="toDetailDevice" id="9fw-p3-pP4"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYU-pw-iXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1343" y="143"/>
+        </scene>
+        <!--Accessory View Controller-->
+        <scene sceneID="x2y-4Y-5Lo">
+            <objects>
+                <viewController id="nP0-Y4-a5Z" customClass="AccessoryViewController" customModule="HomeKitExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3q9-iq-TUR"/>
+                        <viewControllerLayoutGuide type="bottom" id="KyO-M9-czm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y5k-XD-a5m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1T-3B-bEd">
+                                <rect key="frame" x="16" y="72" width="178" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type: Fan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQH-gB-SFR">
+                                <rect key="frame" x="16" y="116" width="95.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set on/off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-3C-dfL">
+                                <rect key="frame" x="16" y="166.5" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rhf-ds-55m">
+                                <rect key="frame" x="310" y="161.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="nP0-Y4-a5Z" eventType="valueChanged" id="oB2-9w-bS5"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W1T-3B-bEd" firstAttribute="top" secondItem="3q9-iq-TUR" secondAttribute="bottom" constant="8" id="22X-b3-pxm"/>
+                            <constraint firstItem="hqf-3C-dfL" firstAttribute="leading" secondItem="y5k-XD-a5m" secondAttribute="leading" constant="16" id="BQC-Ky-Jkd"/>
+                            <constraint firstItem="sQH-gB-SFR" firstAttribute="top" secondItem="W1T-3B-bEd" secondAttribute="bottom" constant="8" id="bhO-8W-3Af"/>
+                            <constraint firstItem="hqf-3C-dfL" firstAttribute="top" secondItem="sQH-gB-SFR" secondAttribute="bottom" constant="24" id="dux-nf-mMc"/>
+                            <constraint firstItem="W1T-3B-bEd" firstAttribute="leading" secondItem="y5k-XD-a5m" secondAttribute="leading" constant="16" id="nCD-jO-HK1"/>
+                            <constraint firstItem="sQH-gB-SFR" firstAttribute="leading" secondItem="y5k-XD-a5m" secondAttribute="leading" constant="16" id="oan-Ew-OmM"/>
+                            <constraint firstItem="rhf-ds-55m" firstAttribute="centerY" secondItem="hqf-3C-dfL" secondAttribute="centerY" id="qQz-dy-uXE"/>
+                            <constraint firstAttribute="trailing" secondItem="rhf-ds-55m" secondAttribute="trailing" constant="16" id="vrk-gm-eT0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="onOffSwitch" destination="rhf-ds-55m" id="8VW-xe-1uf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lqi-nd-sxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2234" y="141"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ktZ-uL-Sbe">
@@ -135,11 +193,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mLr-5D-5P4" id="E3D-Hv-aTC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4tC-We-fmV">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>

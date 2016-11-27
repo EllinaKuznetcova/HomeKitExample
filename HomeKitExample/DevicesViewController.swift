@@ -14,6 +14,16 @@ class DevicesViewController: UITableViewController {
         static let indentifier = "toAccessoryAdding"
     }
     
+    struct DetailAccessorySegue {
+        static let indentifier = "toDetailAccessory"
+        
+        var accessory: HMAccessory
+        
+        init(accessory: HMAccessory) {
+            self.accessory = accessory
+        }
+    }
+    
     var room: HMRoom?
     var devices: [HMAccessory] = [] {
         didSet {
@@ -30,7 +40,18 @@ class DevicesViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        (segue.destination as? AccessorySearcherViewController)?.roomToAdd = self.room
+        guard let identifier = segue.identifier else {return}
+        switch identifier {
+        case AccessoryAddSegue.indentifier:
+            (segue.destination as? AccessorySearcherViewController)?.roomToAdd = self.room
+            return
+        case DetailAccessorySegue.indentifier:
+            guard let segueData = sender as? DetailAccessorySegue else {return}
+            (segue.destination as? AccessoryViewController)?.accessory = segueData.accessory
+            return
+        default:
+            return
+        }
     }
     
     @IBAction func addPressed(_ sender: Any) {
@@ -50,7 +71,7 @@ extension DevicesViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        self.performSegue(withIdentifier: DevicesSegue.identifier, sender: DevicesSegue(selectedRoom: self.devices[indexPath.row]))
+        self.performSegue(withIdentifier: DetailAccessorySegue.indentifier, sender: DetailAccessorySegue(accessory: self.devices[indexPath.row]))
     }
 }
 

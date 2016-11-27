@@ -1,5 +1,5 @@
 //
-//  DevicesViewController.swift
+//  AccessoriesViewController.swift
 //  HomeKitExample
 //
 //  Created by Ellina Kuznecova on 26.11.16.
@@ -9,7 +9,7 @@
 import UIKit
 import HomeKit
 
-class DevicesViewController: UITableViewController {
+class AccessoriesViewController: UITableViewController {
     struct AccessoryAddSegue {
         static let indentifier = "toAccessoryAdding"
     }
@@ -25,7 +25,7 @@ class DevicesViewController: UITableViewController {
     }
     
     var room: HMRoom?
-    var devices: [HMAccessory] = [] {
+    var accessories: [HMAccessory] = [] {
         didSet {
             self.tableView.reloadData()
         }
@@ -36,7 +36,7 @@ class DevicesViewController: UITableViewController {
         
         HomeManager.delegate = self
         
-        self.devices = self.room?.accessories ?? []
+        self.accessories = self.room?.accessories ?? []
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -59,22 +59,22 @@ class DevicesViewController: UITableViewController {
     }
 }
 
-extension DevicesViewController {
+extension AccessoriesViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.devices.count
+        return self.accessories.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "basic")!
-        cell.textLabel?.text = self.devices[indexPath.row].name
+        cell.textLabel?.text = self.accessories[indexPath.row].name
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: DetailAccessorySegue.indentifier, sender: DetailAccessorySegue(accessory: self.devices[indexPath.row]))
+        self.performSegue(withIdentifier: DetailAccessorySegue.indentifier, sender: DetailAccessorySegue(accessory: self.accessories[indexPath.row]))
     }
 }
 
-extension DevicesViewController: HMHomeManagerDelegate {
+extension AccessoriesViewController: HMHomeManagerDelegate {
     
 }

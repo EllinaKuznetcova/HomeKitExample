@@ -49,17 +49,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="hbx-kd-bqr" kind="show" identifier="toDevices" id="6F0-KI-NOW"/>
+                        <segue destination="hbx-kd-bqr" kind="show" identifier="toAccessories" id="6F0-KI-NOW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Di-H9-ikK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="574" y="143"/>
         </scene>
-        <!--Devices-->
+        <!--Accessories-->
         <scene sceneID="buT-bN-Ld9">
             <objects>
-                <tableViewController title="Devices" id="hbx-kd-bqr" customClass="DevicesViewController" customModule="HomeKitExample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Accessories" id="hbx-kd-bqr" customClass="AccessoriesViewController" customModule="HomeKitExample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yS5-57-fbe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,7 +90,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="UvK-Oe-0n6" kind="presentation" identifier="toAccessoryAdding" id="NNb-yC-rjs"/>
-                        <segue destination="nP0-Y4-a5Z" kind="show" identifier="toDetailDevice" id="9fw-p3-pP4"/>
+                        <segue destination="nP0-Y4-a5Z" kind="show" identifier="toDetailAccessory" id="9fw-p3-pP4"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYU-pw-iXp" userLabel="First Responder" sceneMemberID="firstResponder"/>

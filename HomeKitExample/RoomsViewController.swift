@@ -11,8 +11,8 @@ import HomeKit
 
 class RoomsViewController: UITableViewController {
     
-    struct DevicesSegue {
-        static let identifier = "toDevices"
+    struct AccessoriesSegue {
+        static let identifier = "toAccessories"
         
         var selectedRoom: HMRoom
         
@@ -71,8 +71,8 @@ class RoomsViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let devicesSegue = sender as? DevicesSegue else {return}
-        (segue.destination as? DevicesViewController)?.room = devicesSegue.selectedRoom
+        guard let accessoriesSegue = sender as? AccessoriesSegue else {return}
+        (segue.destination as? AccessoriesViewController)?.room = accessoriesSegue.selectedRoom
     }
 }
 
@@ -88,7 +88,7 @@ extension RoomsViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: DevicesSegue.identifier, sender: DevicesSegue(selectedRoom: self.rooms[indexPath.row]))
+        self.performSegue(withIdentifier: AccessoriesSegue.identifier, sender: AccessoriesSegue(selectedRoom: self.rooms[indexPath.row]))
     }
 }
 

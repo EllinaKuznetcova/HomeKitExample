@@ -43,7 +43,8 @@ class AccessoriesViewController: UITableViewController {
         guard let identifier = segue.identifier else {return}
         switch identifier {
         case AccessoryAddSegue.indentifier:
-            (segue.destination as? AccessorySearcherViewController)?.roomToAdd = self.room
+            let destNavigationController = segue.destination as? UINavigationController
+            (destNavigationController?.topViewController as? AccessorySearcherViewController)?.roomToAdd = self.room
             return
         case DetailAccessorySegue.indentifier:
             guard let segueData = sender as? DetailAccessorySegue else {return}

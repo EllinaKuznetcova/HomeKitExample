@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DC149DDE1DEB3EF500A1A5FA /* AccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC149DDD1DEB3EF500A1A5FA /* AccessoryViewController.swift */; };
-		DC1BDC771DE9FD2300CCBA03 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BDC761DE9FD2300CCBA03 /* Helpers.swift */; };
 		DC1BDC791DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BDC781DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift */; };
 		DCE125EB1DE9D82E003EFC56 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE125EA1DE9D82E003EFC56 /* DevicesViewController.swift */; };
+		E73551081DEF2A7500564166 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73551071DEF2A7500564166 /* Helpers.swift */; };
 		E7B636711D34EB3D00711E90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B636701D34EB3D00711E90 /* AppDelegate.swift */; };
 		E7B636731D34EB3D00711E90 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B636721D34EB3D00711E90 /* RoomsViewController.swift */; };
 		E7B636761D34EB3D00711E90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B636741D34EB3D00711E90 /* Main.storyboard */; };
@@ -21,9 +21,9 @@
 
 /* Begin PBXFileReference section */
 		DC149DDD1DEB3EF500A1A5FA /* AccessoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryViewController.swift; sourceTree = "<group>"; };
-		DC1BDC761DE9FD2300CCBA03 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = ../Helpers.swift; sourceTree = "<group>"; };
 		DC1BDC781DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessorySearcherViewController.swift; sourceTree = "<group>"; };
 		DCE125EA1DE9D82E003EFC56 /* DevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		E73551071DEF2A7500564166 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		E7B6366D1D34EB3D00711E90 /* HomeKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B636701D34EB3D00711E90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7B636721D34EB3D00711E90 /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
@@ -67,13 +67,13 @@
 		E7B6366F1D34EB3D00711E90 /* HomeKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				E73551071DEF2A7500564166 /* Helpers.swift */,
 				E7B636821D34EB9500711E90 /* HomeKitExample.entitlements */,
 				E7B636701D34EB3D00711E90 /* AppDelegate.swift */,
 				E7B636721D34EB3D00711E90 /* RoomsViewController.swift */,
 				DCE125EA1DE9D82E003EFC56 /* DevicesViewController.swift */,
 				DC1BDC781DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift */,
 				DC149DDD1DEB3EF500A1A5FA /* AccessoryViewController.swift */,
-				DC1BDC761DE9FD2300CCBA03 /* Helpers.swift */,
 				E7B636741D34EB3D00711E90 /* Main.storyboard */,
 				E7B636771D34EB3D00711E90 /* Assets.xcassets */,
 				E7B636791D34EB3D00711E90 /* LaunchScreen.storyboard */,
@@ -161,11 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B636731D34EB3D00711E90 /* RoomsViewController.swift in Sources */,
+				E73551081DEF2A7500564166 /* Helpers.swift in Sources */,
 				DCE125EB1DE9D82E003EFC56 /* DevicesViewController.swift in Sources */,
 				DC1BDC791DEAF9FE00CCBA03 /* AccessorySearcherViewController.swift in Sources */,
 				E7B636711D34EB3D00711E90 /* AppDelegate.swift in Sources */,
 				DC149DDE1DEB3EF500A1A5FA /* AccessoryViewController.swift in Sources */,
-				DC1BDC771DE9FD2300CCBA03 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
